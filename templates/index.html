@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello welcome to textutils.</title>
+</head>
+<body>
+    <h1>welcome to text utils</h1>
+
+    <form action="/analyze" method="post"> {% csrf_token %}
+<textarea name="text" cols="130" rows="20"></textarea> <br>
+<input type="checkbox" name="puncremove" id="pun"><label for="pun">remove puntuation</label>  
+<input type="checkbox" name="uppercase" id="upp"><label for="upp">UPPER CASE</label> 
+<input type="checkbox" name="newlineremover" id="rem"><label for="rem">new line remover</label> 
+<input type="checkbox" name="extraspaceremover" id="exrem"><label for="exrem">extra space remover</label> 
+<input type="checkbox" name="lowercase" id="lower"><label for="lower">lower case</label> <br> <br>
+<button type="submit">Analyze text</button>
+
+    </form>
+</body>
+</html>
